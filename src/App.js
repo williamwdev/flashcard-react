@@ -1,11 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
+import FlashcardList from './FlashcardList';
 
 function App() {
+  const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS);
+  console.log(flashcards)
+
   return (
-    <div className="App">
-      <div>Initial Commit</div>
-    </div>
+    <FlashcardList flashcards={flashcards} />
   );
 }
+
+const SAMPLE_FLASHCARDS = [
+  {
+    id: 1,
+    question: 'What is question 1?',
+    answers: '1',
+    options: [
+      'a',
+      'b',
+      'c',
+      'd',
+    ]
+  },
+  {
+    id: 2,
+    question: 'What is question 2?',
+    answers: 'Filler Answer',
+    options: [
+      'a',
+      'Filler Answer',
+      'c',
+      'd',
+    ]
+  }
+]
 
 export default App;
