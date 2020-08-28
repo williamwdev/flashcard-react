@@ -1,10 +1,12 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 export default function Flashcard({ flashcard }) {
   const [flip, setFlip] = useState(false);
 
   const frontEl = useRef();
   const backEl = useRef();
+
+  // useEffect([flashcard.question, flashcard.answer, flashcard.options])
 
   return (
     <div
