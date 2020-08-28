@@ -14,7 +14,7 @@ const SAMPLE_FLASHCARDS = [
   {
     id: 1,
     question: 'What is question 1?',
-    answers: 'a',
+    answer: 'a',
     options: [
       'a',
       'b',
@@ -25,7 +25,7 @@ const SAMPLE_FLASHCARDS = [
   {
     id: 2,
     question: 'What is question 2?',
-    answers: 'b',
+    answer: 'b',
     options: [
       'a',
       'b',
